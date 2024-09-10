@@ -1,3 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e1f2f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 50px;
+    margin-top:40px;
+    
+    background-color: #bfd9d8;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+h2{
+    text-decoration-line: underline;
+}
+
+.personal-info {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+
+    width: 150px;
+    height: 150px;
+    border-style: groove;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.profile-pic:hover{
+transform-box:stroke-box;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h3 {
+    color: #555;
+}
+
+.education,  .work-experience {
+    margin-bottom: 30px;
+    text-align:left;
+}
+
+
+.education-item, .work-item {
+    margin-bottom: 15px;
+}
+
+* {box-sizing: border-box}
+h2{
+    text-align: left;
+}
+
+.containe {
+  width: 100%;
+  background-color: #f8f4f4;
+  border-radius:30px ;
+}
+p{
+ text-align: left;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  color: rgb(45, 38, 38);
+}
+
+.toggleButton1{
+    padding: 10px 0px;
+    float: left;
+    margin: 0 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;}
+
+.toggleButton2{
+    padding: 10px 0px;
+    float: left;
+    margin: 0 20px;
+    background-color: #5c93cd;
+    color: white;
+    border: none;
+    cursor: pointer;}
+  
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.ts {width: 40%; background-color: #4b7456;}
+
+
 
 
 
@@ -5,173 +108,74 @@ body {
     font-family: Arial, sans-serif;
     background-color: #b2c2e4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #333;
 }
 
-.form-container, .resume-container {
-
-    background:#e1f2f0;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form h2 {
-    margin-top: 20px;
-    color: #555;
-  
+form {
+    margin-bottom: 30px;
+    background-image:url(./images/back.jpeg);
+background-repeat: no-repeat;
+height: 1400px;
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="file"],
 textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 9px;
 }
 
-button[type="submit"],
-button[type="button"] {
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: #fff;
+input[type="file"] {
+    margin-bottom: 20px;
+    
+}
+
+button {
+    background-color: #007bff;
+    margin:10px;
+    color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 4px;
+    float:center;
     cursor: pointer;
+    width: 95%;
 }
 
-button[type="submit"]:hover,
-button[type="button"]:hover {
+button:hover {
     background-color: #0056b3;
 }
 
-.education-entry, .work-entry {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-top: 10px;
-    position: relative;
-    border-radius: 4px;
-}
-
-.remove-education,
-.remove-work {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 5px 8px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.remove-education:hover,
-.remove-work:hover {
-    background-color: #c82333;
-}
-
-.resume {
+.resume-output {
     padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #f0f0f0;
     border-radius: 8px;
-    background-color: #fff;
-}
-
-.resume .header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.resume .header img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.resume .header h1 {
-    margin: 10px 0 5px 0;
-    font-size: 32px;
-}
-
-.resume .header p {
-    margin: 2px 0;
-    color: #666;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-.section h2 {
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
-    color: #007BFF;
-}
-
-.section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.section ul li {
-    margin-bottom: 10px;
-}
-
-.actions {
-    text-align: center;
     margin-top: 20px;
 }
 
-.actions button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    background-color: #28a745;
-    border: none;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.actions button#download-pdf {
-    background-color: #17a2b8;
-}
-
-.actions button:hover {
-    opacity: 0.9;
-}
-
-@media (max-width: 768px) {
-    .resume .header img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .resume .header h1 {
-        font-size: 24px;
-    }
+img {
+    display: block;
+    margin: 0 auto;
 }
